@@ -1,6 +1,9 @@
 #include <stdio.h>
 #include "9-encabezados.h"
 
+// Declaración de funcion4()
+int funcion4(int x);
+
 int main() {
 
     int v;
@@ -33,5 +36,12 @@ void funcion2(int a, float b) {
 int funcion3(int x) {
     printf("En funcion3()...\n");
     int y = x + 2;
+    return y;
+}
+
+// Implementación de funcion4: Realiza una resta
+int funcion4(int x) {
+    printf("En funcion4()...\n");
+    int y = x - 2;
     return y;
 }
