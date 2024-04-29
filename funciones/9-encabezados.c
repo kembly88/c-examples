@@ -1,7 +1,6 @@
 #include <stdio.h>
 #include "9-encabezados.h"
 
-
 int main() {
 
     int v;
@@ -10,18 +9,8 @@ int main() {
     funcion1();
     funcion2(5, 2.67);
     v = funcion3(10);
-
-    // Imprime el valor que retornó funcion3()
-    printf("v = %d\n", v);
-
-    // Llama a funcion4() con un valor
-    v = funcion4(10);
-
-    // Imprime el valor que retornó funcion4()
-    printf("v = %d\n", v);
-
-    // Llama a funcion5() con otro valor
-    v = funcion5(7); // Pasamos 7 como argumento a funcion5()
+    v = funcion4(10); // Llama a funcion 4
+    // Imprime los valores
     printf("v = %d\n", v);
 
     return 0;
@@ -42,24 +31,16 @@ void funcion2(int a, float b) {
 // funcion3(): Imprime un mensaje. Retorna el valor que recibió como argumento
 // incrementado en 2
 int funcion3(int x) {
-    printf("En funcion3()...\n");
-    int y = x + 2;
+    printf("En funcion3()...\n");     
+int y = x + 2;
     return y;
-}
-
-// funcion4(): Imprime un mensaje. Retorna el valor que recibió como argumento
-// decrementado en 2
+} 
+ // funcion3(): Imprime un mensaje. Retorna el valor que recibió como argumento
+// incrementado en 2
 int funcion4(int x) {
-    printf("En funcion4()...\n");
-    int y = x - 2;
+    printf("En funcion4()...\n");     
+int y = x - 2; //Resta en lugar de suma
     return y;
-}
+} 
 
 
-// funcion5(): Imprime un mensaje. Retorna el valor que recibió como argumento
-// incrementado en un número diferente de 2
-int funcion5(int x) {
-    printf("En funcion5()...\n");
-    int y = x + 5; // Cambia el número que se suma a x
-    return y;
-}
