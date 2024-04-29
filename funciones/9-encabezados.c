@@ -1,8 +1,6 @@
 #include <stdio.h>
 #include "9-encabezados.h"
 
-// Declaración de funcion4()
-int funcion4(int x);
 
 int main() {
 
@@ -15,6 +13,13 @@ int main() {
 
     // Imprime el valor que retornó funcion3()
     printf("v = %d\n", v);
+
+    // Llama a funcion4() con un valor
+    v = funcion4(10);
+
+    // Imprime el valor que retornó funcion4()
+    printf("v = %d\n", v);
+
 
     return 0;
 
@@ -39,9 +44,11 @@ int funcion3(int x) {
     return y;
 }
 
-// Implementación de funcion4: Realiza una resta
+// funcion4(): Imprime un mensaje. Retorna el valor que recibió como argumento
+// decrementado en 2
 int funcion4(int x) {
     printf("En funcion4()...\n");
     int y = x - 2;
     return y;
+}
 }
