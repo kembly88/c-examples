@@ -5,11 +5,12 @@ int main() {
 
     int v;
 
-    // Llama a las 3 funciones
+    // Llama a las funciones existentes 
     funcion1();
     funcion2(5, 2.67);
     v = funcion3(10);
-    v = funcion4(10); // Llama a funcion 4
+    v = funcion5(10); //Llama a la funcion 5
+
     // Imprime los valores
     printf("v = %d\n", v);
 
@@ -34,6 +35,7 @@ int funcion3(int x) {
     printf("En funcion3()...\n");     
 int y = x + 2;
     return y;
+
 } 
  // funcion3(): Imprime un mensaje. Retorna el valor que recibió como argumento
 // incrementado en 2
@@ -43,4 +45,9 @@ int y = x - 2; //Resta en lugar de suma
     return y;
 } 
 
-
+// funcion5(): Retorna el valor que recibió como argumento incrementado en un número diferente de 2
+int funcion5(int x) {
+    printf("En funcion5()...\n");
+    int y = x + 5; // Cambia el número que se suma a x
+    return y;
+}
